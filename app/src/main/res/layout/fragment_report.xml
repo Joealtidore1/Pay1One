@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ReportFragment"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+
+
+
+    <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabLayout"
+            app:tabIndicatorColor="@color/white"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="#999"
+            app:tabBackground="@drawable/tab_layout_bg"
+            app:tabGravity="fill"
+            app:tabMode="fixed">
+            <com.google.android.material.tabs.TabItem
+                android:text="History"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp" />
+            <com.google.android.material.tabs.TabItem
+                android:text="Search"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp" />
+            <!--<com.google.android.material.tabs.TabItem
+                android:text="Range"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp" />-->
+        </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp" >
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+</LinearLayout>

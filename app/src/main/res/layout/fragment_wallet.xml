@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.WalletFragment"
+    android:background="@color/customColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/balance_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:elevation="0dp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="25dp"
+        android:background="@drawable/home_body">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recharge Voucher"
+        android:textSize="14sp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:textAlignment="textEnd"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_bal_bg"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/voucherTL"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:hintTextColor="@color/white"
+                android:hint="Voucher (Required)"
+                android:textColorHint="#ccc"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginHorizontal="3dp"
+                app:boxStrokeColor="@color/customColor"
+                android:layout_marginVertical="10dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/rechargeVoucher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/edit_text_bottom_border"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_light"
+                    android:textSize="18sp"
+                    android:inputType="textPersonName"
+                    android:textCursorDrawable="@null"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:text="Recharge"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="15sp"
+            android:id="@+id/recharge"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            android:background="@drawable/recharge_button"
+            android:shadowColor="@color/purple_200"
+            android:elevation="20dp"
+            android:shadowDx="-50"
+            android:shadowDy="50"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

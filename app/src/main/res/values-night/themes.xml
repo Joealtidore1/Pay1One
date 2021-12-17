@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style billno="Theme.Pay1One" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item billno="colorPrimary">@color/purple_200</item>
+        <item billno="colorPrimaryVariant">@color/purple_700</item>
+        <item billno="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item billno="colorSecondary">@color/teal_200</item>
+        <item billno="colorSecondaryVariant">@color/teal_200</item>
+        <item billno="colorOnSecondary">@color/black</item>
+        <!-- Status barRL color. -->
+        <item billno="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

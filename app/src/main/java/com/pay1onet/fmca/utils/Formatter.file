@@ -1,0 +1,31 @@
+p = p.concat(centerName +"\n");
+        p = p.concat(copy +"\n");
+        p = p.concat( "+++++++++++++++++++++++++++++++\n\n");
+
+        p = p.concat("OFFICIAL RECEIPT"+"\n");
+
+        p = p.concat("PAYER NAME: \r"+ payerName+"\n");
+        p = p.concat("ITEM(S)" +"\n");
+        p = p.concat(p+"\n");
+
+        p = p.concat("\n" +"");
+        p = p.concat("TOTAL: \r"+ total +"\n");
+        p = p.concat("DISCOUNT: " + discount + "\n");
+        p = p.concat("MAIN AMT: "+ amount+"\n");
+
+
+        p = p.concat("------------------------------\n");
+        p = p.concat("METHOD: " + method +"\n");
+        p = p.concat("BILL NO: " + bill+"\n");
+        p = p.concat("[TELLER:[R]" + teller +"\n");
+        p = p.concat("********************************\n");
+        p = p.concat("Powered by Pay1One"+"\n"+"\n"+"\n");
+
+
+         for(PaymentModel s : pModels){
+                    p=p + "[" + s.getRevCode() + "] " + s.getRevenueHead() + "\n" +s.getQuantity() + " \rX\r" + s.getAmount()
+                            + "\r" + s.getTotal() + "\n";
+                    discount = String.valueOf(Double.parseDouble(discount) + Double.parseDouble(s.getDiscount()));
+                    total = String.valueOf(Double.parseDouble(total)+s.getTotal()-Double.parseDouble(discount));
+                    amount += s.getAmount();
+                }

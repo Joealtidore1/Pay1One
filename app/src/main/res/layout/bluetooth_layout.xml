@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/btDevice"
+    android:background="@color/customBottomColor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btName"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:text="Joealtidore@bluetooth.com"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btAddress"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="normal"
+        android:text="Joealtidore@bluetooth.com"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/teal_700"
+        />
+
+</LinearLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/customBottomColor">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:paddingHorizontal="16dp"
+        android:onClick="clickLogo"
+        android:src="@drawable/logo2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="60dp"
+        android:paddingHorizontal="16dp"
+        android:textSize="22sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/white"
+        android:id="@+id/drawerTellerName"
+        android:text="@string/boss_miller"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:paddingHorizontal="16dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/white"
+        android:id="@+id/drawerTellerMail"
+        android:text="miller@boss.org"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="8dp"
+        android:background="@color/customColor">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:onClick="clickHome">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/home"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#dedede"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Dashboard"
+            android:layout_marginEnd="48dp"
+            android:padding="12dp"
+           />
+
+    </LinearLayout>
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="5dp"
+            android:gravity="center_vertical"
+            android:onClick="clickPayment">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/payments"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="#dedede"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Make Payment"
+                android:layout_marginEnd="48dp"
+                android:padding="12dp"
+                />
+
+        </LinearLayout>-->
+
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginVertical="15dp"
+            android:onClick="clickEMR">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/receipt"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#dedede"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Process EMR"
+                android:layout_marginEnd="48dp"
+                android:padding="12dp"
+                />
+
+        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginVertical="5dp"
+            android:onClick="clickProcessInvoice">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/receipt"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#dedede"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Process Invoice"
+                android:layout_marginEnd="48dp"
+                android:padding="12dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginVertical="5dp"
+            android:onClick="clickReport">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/report"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Report"
+                android:textColor="#dedede"
+                android:layout_marginEnd="48dp"
+                android:padding="12dp"
+                />
+
+        </LinearLayout>
+
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginVertical="5dp"
+            android:onClick="clickSearch">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/searchs"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"
+                android:text="Search"
+                android:textColor="#dedede"
+                android:layout_marginEnd="48dp"
+                android:padding="12dp"
+                />
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginVertical="5dp"
+            android:onClick="clickWallet">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/wallet"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Wallet"
+                android:textColor="#dedede"
+                android:layout_marginEnd="48dp"
+                android:padding="12dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginVertical="5dp"
+            android:onClick="clickRevHeads">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/rev_head"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#dedede"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Departments"
+                android:layout_marginEnd="48dp"
+                android:padding="12dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

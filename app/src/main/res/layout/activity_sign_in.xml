@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LauncherActivity"
+    android:background="@color/customColor">
+
+
+    <RelativeLayout
+        android:layout_width="1200dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-600dp"
+        android:background="@drawable/bag"
+        android:rotation="-45"/>
+
+
+    <ImageView
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/logo"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            app:boxStrokeColor="@color/customBorderColor"
+            app:hintTextColor="@color/customTextColor"
+            android:paddingVertical="10dp"
+            android:layout_marginHorizontal="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:inputType="textPersonName"
+                android:textCursorDrawable="@null"
+                android:drawableEnd="@drawable/user_logo"
+                android:layout_centerInParent="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:hintTextColor="@color/customTextColor"
+            app:boxStrokeColor="@color/customBorderColor"
+            android:paddingVertical="10dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#55467AA1"
+            android:layout_marginHorizontal="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textCursorDrawable="@null"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:layout_centerInParent="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            app:backgroundTint="@null"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_bg"/>
+
+    </LinearLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:SpinKit_Color="@color/textColorGrey"
+        android:visibility="gone"
+        android:elevation="200dp"
+        style="@style/SpinKitView.Circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>

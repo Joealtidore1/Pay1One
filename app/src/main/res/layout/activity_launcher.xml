@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LauncherActivity"
+    android:background="@drawable/launcher_bg">
+
+    <RelativeLayout
+        android:id="@+id/lineRel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="100dp"
+        android:layout_marginHorizontal="20dp"
+        android:rotation="45">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            >
+            <View
+                android:id="@+id/startLine"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="200dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/launcher_lines" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/startLine"
+                android:layout_toStartOf="@id/middleLine">
+                <View
+                    android:id="@+id/middleStart"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/launcher_lines" />
+            </RelativeLayout>
+
+
+
+            <View
+                android:id="@+id/middleLine"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/launcher_lines"
+                android:layout_centerHorizontal="true"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/middleLine"
+                android:layout_toStartOf="@id/endLine">
+                <View
+                    android:id="@+id/middleEnd"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/launcher_lines"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/endLine"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="60dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/launcher_lines"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo2"
+            android:layout_centerInParent="true"
+            android:paddingHorizontal="80dp"
+            android:paddingVertical="30dp"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
